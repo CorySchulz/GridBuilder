@@ -13,7 +13,6 @@
 var dev;
 
 var App;          	// App var
-var User;         	// User object with data from Google auth
 var auth;         	// Authenticate object for Firebase
 var me;           	// Sometimes used as a global to jump function scopes
 var Router;       	// Used to transitionTo different routes
@@ -33,12 +32,11 @@ var previewState = desktop;
 var currentTimer;
 
 var serverURL;
-//serverURL =  "http://kohdev.metabolights.com/meta/grid";
-serverURL = "http://10.3.40.225:8889/meta/grid";
+serverURL = "http://api.coryschulz.com/meta/gridbuilder";
 
 
 // Update this link when you move the Grid Framework to a new version
-var currentDesktopMinURL = "http://kohlscorporation-dev.cp.ad.kohls.com//GridFramework/v0.4/css/grid-desktop-min.css";
+var currentDesktopMinURL = "http://kohlscorporation-dev.cp.ad.kohls.com/GridFramework/v0.4/css/grid-desktop-min.css";
 var desktopMin = "";
 var shareLink = "http://kohlscorporation-dev.cp.ad.kohls.com/viewer/index.html?page=/buildrviewer/page-loader.asp?buildrid=";
 
@@ -189,64 +187,56 @@ setTimeout(function() {
 
 
 // Check for the key
-var key = getCookie('API_KEY');
-if (key && key != null && key != "null"){
+// var key = getCookie('API_KEY');
+// if (key && key != null && key != "null"){
 
-	var keyObj = {};
-	keyObj['sessionKey'] = key;
+// 	var keyObj = {};
+// 	keyObj['sessionKey'] = key;
 
-	$.ajax({
-			url: 'http://10.3.40.225:8889/auth',
-			type: 'POST',
-			contentType: "application/json; charset=utf-8",
-			data: JSON.stringify(keyObj),
-			success: function(data) {
+// 	$.ajax({
+// 			url: 'http://10.3.40.225:8889/auth',
+// 			type: 'POST',
+// 			contentType: "application/json; charset=utf-8",
+// 			data: JSON.stringify(keyObj),
+// 			success: function(data) {
 				
-				// Save the api key in the app
-				App.set('API_KEY', key );
+// 				// Save the api key in the app
+// 				App.set('API_KEY', key );
 
-				// Set it for all ajax calls
-				$.ajaxSetup({headers: {"API_KEY": key }})
+// 				// Set it for all ajax calls
+// 				$.ajaxSetup({headers: {"API_KEY": key }})
 
-				// data['id'] = data['_id'];
-				// delete data['_id'];
+// 				// data['id'] = data['_id'];
+// 				// delete data['_id'];
 
-				App.User.set('content', {} );
+// 				App.User.set('content', {} );
 
-				App.User.set('id',  data['_id'] );
-				App.User.set('name',  data['name'] );
-				App.User.set('email',  data['email'] );
+// 				App.User.set('id',  data['_id'] );
+// 				App.User.set('name',  data['name'] );
+// 				App.User.set('email',  data['email'] );
 
-				// Reset the cookie
-				setCookie('API_KEY', key, 60);
+// 				// Reset the cookie
+// 				setCookie('API_KEY', key, 60);
 
-				//location.reload();
+// 				//location.reload();
 				
-			},
-			error: function(e) {
+// 			},
+// 			error: function(e) {
 
-			}
-		});
+// 			}
+// 		});
 
 
-}else{
-	Router.transitionTo('user');
-}
+// }else{
+// 	Router.transitionTo('user');
+// }
+
+
+
 
 ////////////////////////////////////////////////////////////
 //  DATA STORE, REST ADAPTER, AND SERIALIZER
 ////////////////////////////////////////////////////////////
-
-/* 
-
-headers: function() {
-		    return {
-		      API_KEY: getCookie('API_KEY')
-		    };
-		 }.property("App.API_KEY"),
-
-
-*/
 
 
 App.ApplicationStore = DS.Store.extend({
@@ -541,6 +531,16 @@ App.CodeGen = Ember.ObjectController.create({
 	deptHTML: "",
 	previewCode: ""
 });
+
+
+// For demo purposes
+App.User.set('content', {} );
+App.User.set('id',  "0" );
+App.User.set('name',  "Chuck Norris" );
+App.User.set('email',  "chuck@norris.com" );
+
+App.set('API_KEY', "demo" );
+
 
 
 

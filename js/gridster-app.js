@@ -708,7 +708,7 @@ function saveBlockData(){
 		// Get te DOM element
 		var domElement = $( "#" + domBlocks[i].id );
 
-		var newData = { id: domBlocks[i].id };
+		var newData = { _id: domBlocks[i].id };
 
 		newData[previewState + 'Col'] = 	domElement.attr('data-col');
 		newData[previewState + 'Row'] = 	domElement.attr('data-row');
