@@ -1,0 +1,541 @@
+
+
+
+/*  OVERRIDE NORMALIZE STYLES  */
+.grid-wrapper  a {	color: black;	}
+
+a:hover, a:active{
+	color: inherit;
+	text-decoration: none;
+	}
+
+/*    FOR DECLARING THE WIDTH OF THE GRID WRAPPER    */
+.grid-wrapper-804{			width: 804px;	float: right;	}
+.grid-wrapper-844{			width: 844px;					}
+.grid-wrapper-848{			width: 848px;	float: none !important;	}
+.grid-wrapper-985{			width: 984px;	float: none !important;	}
+.grid-wrapper-1024{			width: 1024px;	float: none !important;	}
+.grid-wrapper-804 .grid-content{	font-size: 78.515%;		}
+.grid-wrapper-844 .grid-content{	font-size: 82.421%;		}
+.grid-wrapper-848 .grid-content{	font-size: 82.8125%;	}
+.grid-wrapper-985 .grid-content{	font-size: 96.093%;		}
+.grid-wrapper-1024 .grid-content{	font-size: 100%;		}
+
+/* 	WE DON'T DECLARE A FONT-SIZE FOR THE GRID-CONTENT 
+ 	BECAUSE THE JAVASCRIPT WILL DO THAT FOR US.   		*/
+.grid-wrapper-skava{
+	width: 100%;
+	position: relative;
+	margin: auto;
+	float: none;
+	z-index: 1000;
+	}
+
+
+/*    BASIC GRID STRUCTURE   */
+.grid-wrapper{
+	font-size: 16px;
+	position: relative;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	margin: 10px auto;
+	}
+
+
+.grid-wrapper .grid-content{
+
+	}
+
+.grid-content .grid-box{
+	display: block;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	float: left;
+	height: auto;
+	position: relative;
+	}
+
+ .grid-content .grid-box:before{
+	content: "";
+	display: block;
+	}
+
+.grid-box:before{
+	content: "" !important;
+	display: block;
+	}
+
+.grid-content .grid-box a{
+	text-decoration: none;
+	}
+
+.grid-box .box-content{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	overflow: hidden;
+	}
+
+
+
+.grid-box .box-content .box-bg-image{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	}
+
+
+
+
+
+/*   ADD BORDER TO A DIV */
+.grid-wrapper .d-border-top{		border-top: 1px solid #b7b7b7;		}
+.grid-wrapper .d-border-right{		border-right: 1px solid #b7b7b7;	}
+.grid-wrapper .d-border-bottom{		border-bottom: 1px solid #b7b7b7;	}
+.grid-wrapper .d-border-left{		border-left: 1px solid #b7b7b7;		}
+
+/*   MULTIPLE BORDERS  */
+.grid-wrapper .d-border-br{			border-right: 1px solid #b7b7b7;
+									border-bottom: 1px solid #b7b7b7;	}
+.grid-wrapper .d-border-all{		border: 1px solid #b7b7b7;			}
+.grid-wrapper .d-border-none{ 		border: none !important;			}
+
+
+
+/*   BOTTOM BUTTON CLASSES   */
+.grid-wrapper .box-bottom-button {
+	position: absolute;
+	display: block;
+	left: 0;
+	bottom: 0;
+	
+	width: 100%;
+	margin: 0;
+	padding: 2.1em 0;
+	border-top: none;
+	border-top: 1px solid rgba(0, 0, 0, .1);
+
+	/* IE6-8 */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#26ffffff', endColorstr='#26ffffff',GradientType=0 ); 
+	background: rgba(255, 255, 255, .15);
+
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	line-height: 100%;
+	font-size: 0.75em;
+	font-family: 'Gotham SSm 5r', 'Gotham 5r', Helvetica, Arial, sans-serif;
+	text-align: center;
+	text-decoration: none;
+
+	-webkit-transition: background .6s ease-out;
+	-moz-transition: background .6s ease-out;
+	-ms-transition: background .6s ease-out;
+	-o-transition: background .6s ease-out;
+	transition: background .6s ease-out;
+
+	user-select: none;
+	-moz-user-select: none;
+ 	-webkit-user-select: none;
+  	-ms-user-select: none;
+  	cursor: pointer;
+	}
+
+
+.grid-wrapper .box-bottom-button:hover,
+.grid-wrapper .box-bottom-button:active,
+.grid-wrapper .box-bottom-button:focus{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#14000000', endColorstr='#14000000',GradientType=0 ); /* IE6-8 */
+	background: rgba(0, 0, 0, .08);
+	color: #fff;
+	}
+
+.grid-wrapper .box-bottom-text,
+.grid-wrapper .box-bottom-text-white,
+.grid-wrapper .box-bottom-text-two-lines {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	bottom: 0;
+	padding: 2.1em 0;
+	border: none;
+	background: transparent;
+	color: black;
+	text-transform: uppercase;
+	font-size: .75em;
+	text-align: center;
+	font-family: 'Gotham SSm 5r', 'Gotham 5r', Helvetica, Arial, sans-serif;
+
+	-webkit-transition: background .6s ease-out;
+	-moz-transition: background .6s ease-out;
+	-ms-transition: background .6s ease-out;
+	-o-transition: background .6s ease-out;
+	transition: background .6s ease-out;
+
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	}
+
+
+
+.box-content:hover > .box-bottom-text-two-lines,
+.box-content:focus > .box-bottom-text-two-lines,
+.box-content:hover > a > .box-bottom-text-two-lines,
+.box-content:focus > a > .box-bottom-text-two-lines,
+.box-content:hover > .box-bottom-text,
+.box-content:focus > .box-bottom-text,
+.box-content:hover > a > .box-bottom-text,
+.box-content:focus > a > .box-bottom-text{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#14000000', endColorstr='#14000000',GradientType=0 ); /* IE6-8 */
+	background: rgba(0,0,0,0.08);
+}
+
+
+.box-content:hover > .box-bottom-text-white,
+.box-content:focus > .box-bottom-text-white{
+	background: rgb(255,255,255);
+	background: rgba(255,255,255,0.95);
+}
+
+
+
+
+
+
+
+/*    GAP BETWEEN BOXES    */
+.grid-wrapper .grid-gap{		
+	width: 100%;
+	display: block;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	float: left;
+	height: 2em;
+	}
+
+	
+/*    GRID COLOR BAR    */
+.grid-wrapper .grid-color-bar{
+	display: block;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	float: left;
+	position: relative;
+	width: 100%; 
+	height: 0.5em;
+	background: #b5b4b4;
+	}
+
+#gridster .grid-color-bar{
+	margin-top: 29px;
+}
+
+
+
+.grid-wrapper .grid-font-white{		color: white;				}
+.grid-wrapper .grid-font-gray,
+.grid-wrapper .grid-font-grey{		color: #808080;				}
+.grid-wrapper .grid-font-black{		color: black;				}
+.grid-wrapper .grid-font-uppercase{	text-transform: uppercase;	}
+.grid-wrapper .grid-font-center{	text-align: center; 		}
+.grid-wrapper .grid-font-left{		text-align: left; 			}
+.grid-wrapper .grid-font-right{		text-align: right; 			}
+
+.grid-wrapper .gotham-normal { 			font-family: 'Gotham 4r', Helvetica, Arial, sans-serif;		}
+.grid-wrapper .gotham-medium{ 			font-family: 'Gotham 5r', Helvetica, Arial, sans-serif;		}
+.grid-wrapper .gotham-medium-mobile{ 	font-family: 'Gotham SSm 5r', Helvetica, Arial, sans-serif;	}
+.grid-wrapper .gotham-bold{ 			font-family: 'Gotham 7r', Helvetica, Arial, sans-serif;		}
+.grid-wrapper .gotham-black{ 			font-family: 'Gotham 8r', Helvetica, Arial, sans-serif;		}
+
+
+
+.grid-wrapper .grid-line-height110 { line-height:110% }
+.grid-wrapper .grid-line-height120 { line-height:120% }
+.grid-wrapper .grid-line-height130 { line-height:130% }
+.grid-wrapper .grid-line-height140 { line-height:140% }
+.grid-wrapper .grid-line-height150 { line-height:150% }
+.grid-wrapper .grid-line-height160 { line-height:160% }
+
+
+
+
+
+/* 	ADD THE "grid-vertically-centered-text" CLASS TO A DIV
+	AND THEN USE A <p> TAG INSIDE TO VERTICALLY CENTER TEXT. */
+.grid-wrapper .grid-vertically-centered-text,
+.grid-wrapper .grid-vct { 
+	position: absolute; 
+	left: 0; 
+	top: 0; 
+	width: 100%; 
+	height: 100%; 
+	display: table; 
+	}
+
+.grid-wrapper .grid-vertically-centered-text > *,
+.grid-wrapper .grid-vct > * {
+	display: table-cell; 
+	vertical-align: middle; 
+	text-align: center; 
+	}
+
+/*  HOVER HELPERS  */
+.grid-wrapper .grid-hover-text-white:hover{		color: white; 		}
+.grid-wrapper .grid-hover-text-black:hover{		color: black; 		}
+.grid-wrapper .grid-hover-bg-white:hover{		background: white;	}
+.grid-wrapper .grid-hover-bg-black:hover{		background: black;	}
+
+
+
+
+
+
+/*    SCALABLE FONT CLASSES    */
+.grid-wrapper .gotham8{			font-size: 0.5em	}
+.grid-wrapper .gotham9{			font-size: 0.5625em	}
+.grid-wrapper .gotham10{		font-size: 0.625em	}
+.grid-wrapper .gotham11{		font-size: 0.6875em	}
+.grid-wrapper .gotham12{		font-size: 0.75em	}
+.grid-wrapper .gotham13{		font-size: 0.8125em	}
+.grid-wrapper .gotham14{		font-size: 0.875em	}
+.grid-wrapper .gotham15{		font-size: 0.9375em	}
+.grid-wrapper .gotham16{		font-size: 1em		}
+.grid-wrapper .gotham17{		font-size: 1.0625em	}
+.grid-wrapper .gotham18{		font-size: 1.125em	}
+.grid-wrapper .gotham19{		font-size: 1.1875em	}
+.grid-wrapper .gotham20{		font-size: 1.25em	}
+.grid-wrapper .gotham21{		font-size: 1.3125em	}
+.grid-wrapper .gotham22{		font-size: 1.375em	}
+.grid-wrapper .gotham23{		font-size: 1.4375em	}
+.grid-wrapper .gotham24{		font-size: 1.5em	}
+.grid-wrapper .gotham26{		font-size: 1.625em	}
+.grid-wrapper .gotham28{		font-size: 1.75em	}
+.grid-wrapper .gotham30{		font-size: 1.875em	}
+.grid-wrapper .gotham32{		font-size: 2em		}
+.grid-wrapper .gotham34{		font-size: 2.125em	}
+.grid-wrapper .gotham36{		font-size: 2.25em	}
+.grid-wrapper .gotham38{		font-size: 2.375em	}
+.grid-wrapper .gotham40{		font-size: 2.5em	}
+.grid-wrapper .gotham42{		font-size: 2.625em	}
+.grid-wrapper .gotham44{		font-size: 2.75em	}
+.grid-wrapper .gotham46{		font-size: 2.875em	}
+.grid-wrapper .gotham48{		font-size: 3em		}
+.grid-wrapper .gotham50{		font-size: 3.125em	}
+.grid-wrapper .gotham52{		font-size: 3.25em	}
+.grid-wrapper .gotham54{		font-size: 3.375em	}
+.grid-wrapper .gotham56{		font-size: 3.5em	}
+.grid-wrapper .gotham58{		font-size: 3.625em	}
+.grid-wrapper .gotham60{		font-size: 3.75em	}
+.grid-wrapper .gotham62{		font-size: 3.875em	}
+.grid-wrapper .gotham64{		font-size: 4em		}
+.grid-wrapper .gotham66{		font-size: 4.125em	}
+.grid-wrapper .gotham68{		font-size: 4.25em	}
+.grid-wrapper .gotham70{		font-size: 4.375em	}
+.grid-wrapper .gotham72{		font-size: 4.5em	}
+.grid-wrapper .gotham74{		font-size: 4.625em	}
+.grid-wrapper .gotham76{		font-size: 4.75em	}
+.grid-wrapper .gotham78{		font-size: 4.875em	}
+.grid-wrapper .gotham80{		font-size: 5em		}
+.grid-wrapper .gotham82{		font-size: 5.125em	}
+.grid-wrapper .gotham84{		font-size: 5.25em	}
+.grid-wrapper .gotham86{		font-size: 5.375em	}
+.grid-wrapper .gotham88{		font-size: 5.5em	}
+.grid-wrapper .gotham90{		font-size: 5.625em	}
+.grid-wrapper .gotham92{		font-size: 5.75em	}
+.grid-wrapper .gotham94{		font-size: 5.875em	}
+.grid-wrapper .gotham96{		font-size: 6em		}
+.grid-wrapper .gotham98{		font-size: 6.125em	}
+.grid-wrapper .gotham100{		font-size: 6.25em	}
+.grid-wrapper .gotham102{		font-size: 6.375em	}
+.grid-wrapper .gotham104{		font-size: 6.5em	}
+.grid-wrapper .gotham106{		font-size: 6.625em	}
+.grid-wrapper .gotham108{		font-size: 6.75em	}
+.grid-wrapper .gotham110{		font-size: 6.875em	}
+.grid-wrapper .gotham112{		font-size: 7em		}
+.grid-wrapper .gotham114{		font-size: 7.125em	}
+.grid-wrapper .gotham116{		font-size: 7.25em	}
+.grid-wrapper .gotham118{		font-size: 7.375em	}
+.grid-wrapper .gotham120{		font-size: 7.5em	}
+.grid-wrapper .gotham122{		font-size: 7.625em	}
+.grid-wrapper .gotham124{		font-size: 7.75em	}
+.grid-wrapper .gotham126{		font-size: 7.875em	}
+.grid-wrapper .gotham128{		font-size: 8em		}
+.grid-wrapper .gotham130{		font-size: 8.125em	}
+.grid-wrapper .gotham132{		font-size: 8.25em	}
+.grid-wrapper .gotham134{		font-size: 8.375em	}
+.grid-wrapper .gotham136{		font-size: 8.5em	}
+.grid-wrapper .gotham138{		font-size: 8.625em	}
+.grid-wrapper .gotham140{		font-size: 8.75em	}
+.grid-wrapper .gotham142{		font-size: 8.875em	}
+.grid-wrapper .gotham144{		font-size: 9em		}
+.grid-wrapper .gotham146{		font-size: 9.125em	}
+.grid-wrapper .gotham148{		font-size: 9.25em	}
+.grid-wrapper .gotham150{		font-size: 9.375em	}
+.grid-wrapper .gotham152{		font-size: 9.5em	}
+.grid-wrapper .gotham154{		font-size: 9.625em	}
+.grid-wrapper .gotham156{		font-size: 9.75em	}
+.grid-wrapper .gotham158{		font-size: 9.875em	}
+.grid-wrapper .gotham160{		font-size: 10em		}
+.grid-wrapper .gotham162{		font-size: 10.125em	}
+.grid-wrapper .gotham164{		font-size: 10.25em	}
+.grid-wrapper .gotham166{		font-size: 10.375em	}
+.grid-wrapper .gotham168{		font-size: 10.5em	}
+.grid-wrapper .gotham170{		font-size: 10.625em	}
+.grid-wrapper .gotham172{		font-size: 10.75em	}
+.grid-wrapper .gotham174{		font-size: 10.875em	}
+.grid-wrapper .gotham176{		font-size: 11em		}
+.grid-wrapper .gotham178{		font-size: 11.125em	}
+.grid-wrapper .gotham180{		font-size: 11.25em	}
+.grid-wrapper .gotham182{		font-size: 11.375em	}
+.grid-wrapper .gotham184{		font-size: 11.5em	}
+.grid-wrapper .gotham186{		font-size: 11.625em	}
+.grid-wrapper .gotham188{		font-size: 11.75em	}
+.grid-wrapper .gotham190{		font-size: 11.875em	}
+.grid-wrapper .gotham192{		font-size: 12em		}
+.grid-wrapper .gotham194{		font-size: 12.125em	}
+.grid-wrapper .gotham196{		font-size: 12.25em	}
+.grid-wrapper .gotham198{		font-size: 12.375em	}
+.grid-wrapper .gotham200{		font-size: 12.5em	}
+
+
+
+/* 0 X */
+.grid-wrapper .d0x0 { display: none; }
+
+/* 2 X */
+.grid-wrapper .d2x1{		width: 12.5%; } .grid-wrapper .d2x1:before{		padding-top: 50%;	}
+.grid-wrapper .d2x2{		width: 12.5%; } .grid-wrapper .d2x2:before{		padding-top: 100%;	}
+.grid-wrapper .d2x3{		width: 12.5%; } .grid-wrapper .d2x3:before{		padding-top: 150%; 	}
+.grid-wrapper .d2x4{		width: 12.5%; } .grid-wrapper .d2x4:before{		padding-top: 200%; 	}
+.grid-wrapper .d2x5{		width: 12.5%; } .grid-wrapper .d2x5:before{		padding-top: 250%; 	}
+.grid-wrapper .d2x6{		width: 12.5%; } .grid-wrapper .d2x6:before{ 	padding-top: 300%; 	}
+.grid-wrapper .d2x7{		width: 12.5%; } .grid-wrapper .d2x7:before{		padding-top: 350%; 	}
+.grid-wrapper .d2x8{		width: 12.5%; } .grid-wrapper .d2x8:before{		padding-top: 400%; 	}
+.grid-wrapper .d2x9{		width: 12.5%; } .grid-wrapper .d2x9:before{		padding-top: 450%; 	}
+.grid-wrapper .d2x10{		width: 12.5%; } .grid-wrapper .d2x10:before{ 	padding-top: 500%; 	}
+.grid-wrapper .d2x11{		width: 12.5%; } .grid-wrapper .d2x11:before{ 	padding-top: 550%; 	}
+.grid-wrapper .d2x12{		width: 12.5%; } .grid-wrapper .d2x12:before{ 	padding-top: 600%; 	}
+.grid-wrapper .d2x13{		width: 12.5%; } .grid-wrapper .d2x13:before{ 	padding-top: 650%; 	}
+.grid-wrapper .d2x14{		width: 12.5%; } .grid-wrapper .d2x14:before{ 	padding-top: 700%; 	}
+.grid-wrapper .d2x15{		width: 12.5%; } .grid-wrapper .d2x15:before{ 	padding-top: 750%; 	}
+.grid-wrapper .d2x16{		width: 12.5%; } .grid-wrapper .d2x16:before{ 	padding-top: 800%; 	}
+
+/* 3 X */
+.grid-wrapper .d3x1{		width: 18.75%; } .grid-wrapper .d3x1:before{	padding-top: 33.3%;		}
+.grid-wrapper .d3x2{		width: 18.75%; } .grid-wrapper .d3x2:before{	padding-top: 66.6%;		}
+.grid-wrapper .d3x3{		width: 18.75%; } .grid-wrapper .d3x3:before{ 	padding-top: 100%;		}
+.grid-wrapper .d3x4{		width: 18.75%; } .grid-wrapper .d3x4:before{	padding-top: 133.3%;	}
+.grid-wrapper .d3x5{		width: 18.75%; } .grid-wrapper .d3x5:before{ 	padding-top: 166.6%;	}
+.grid-wrapper .d3x6{		width: 18.75%; } .grid-wrapper .d3x6:before{ 	padding-top: 200%;		}
+.grid-wrapper .d3x7{		width: 18.75%; } .grid-wrapper .d3x7:before{ 	padding-top: 233.3%;	}
+.grid-wrapper .d3x8{		width: 18.75%; } .grid-wrapper .d3x8:before{ 	padding-top: 266.6%;	}
+.grid-wrapper .d3x9{		width: 18.75%; } .grid-wrapper .d3x9:before{ 	padding-top: 300%;		}
+.grid-wrapper .d3x10{		width: 18.75%; } .grid-wrapper .d3x10:before{ 	padding-top: 333.3%;	}
+.grid-wrapper .d3x11{		width: 18.75%; } .grid-wrapper .d3x11:before{ 	padding-top: 366.6%;	}
+.grid-wrapper .d3x12{		width: 18.75%; } .grid-wrapper .d3x12:before{ 	padding-top: 400%;		}
+.grid-wrapper .d3x13{		width: 18.75%; } .grid-wrapper .d3x13:before{ 	padding-top: 433.3%;	}
+.grid-wrapper .d3x14{		width: 18.75%; } .grid-wrapper .d3x14:before{ 	padding-top: 466.6%;	}
+.grid-wrapper .d3x15{		width: 18.75%; } .grid-wrapper .d3x15:before{ 	padding-top: 500%;		}
+.grid-wrapper .d3x16{		width: 18.75%; } .grid-wrapper .d3x16:before{ 	padding-top: 533.3%;	}
+
+/* 4 X */
+.grid-wrapper .d4x1{		width: 25%; } .grid-wrapper .d4x1:before{		padding-top: 25%; 	}
+.grid-wrapper .d4x2{		width: 25%; } .grid-wrapper .d4x2:before{		padding-top: 50%; 	}
+.grid-wrapper .d4x3{		width: 25%; } .grid-wrapper .d4x3:before{ 		padding-top: 75%; 	}
+.grid-wrapper .d4x4{		width: 25%; } .grid-wrapper .d4x4:before{ 		padding-top: 100%;	}
+.grid-wrapper .d4x5{		width: 25%; } .grid-wrapper .d4x5:before{ 		padding-top: 125%;	}
+.grid-wrapper .d4x6{		width: 25%; } .grid-wrapper .d4x6:before{ 		padding-top: 150%;	}
+.grid-wrapper .d4x7{		width: 25%; } .grid-wrapper .d4x7:before{ 		padding-top: 175%;	}
+.grid-wrapper .d4x8{		width: 25%; } .grid-wrapper .d4x8:before{ 		padding-top: 200%;	}
+.grid-wrapper .d4x9{		width: 25%; } .grid-wrapper .d4x9:before{ 		padding-top: 225%;	}
+.grid-wrapper .d4x10{		width: 25%; } .grid-wrapper .d4x10:before{ 		padding-top: 250%;	}
+.grid-wrapper .d4x11{		width: 25%; } .grid-wrapper .d4x11:before{ 		padding-top: 275%;	}
+.grid-wrapper .d4x12{		width: 25%; } .grid-wrapper .d4x12:before{ 		padding-top: 300%;	}
+.grid-wrapper .d4x13{		width: 25%; } .grid-wrapper .d4x13:before{ 		padding-top: 325%;	}
+.grid-wrapper .d4x14{		width: 25%; } .grid-wrapper .d4x14:before{ 		padding-top: 350%;	}
+.grid-wrapper .d4x15{		width: 25%; } .grid-wrapper .d4x15:before{ 		padding-top: 375%;	}
+.grid-wrapper .d4x16{		width: 25%; } .grid-wrapper .d4x16:before{ 		padding-top: 400%;	}
+
+/* 5 X */
+.grid-wrapper .d5x5{		width: 33.335%; } .grid-wrapper .d5x5:before{ 		padding-top: 100%;	}
+
+/* 6 X */
+.grid-wrapper .d6x1{		width: 37.5%; } .grid-wrapper .d6x1:before{		padding-top: 16.667%; 	}
+.grid-wrapper .d6x2{		width: 37.5%; } .grid-wrapper .d6x2:before{		padding-top: 33.334%; 	}
+.grid-wrapper .d6x3{		width: 37.5%; } .grid-wrapper .d6x3:before{		padding-top: 50%; 		}
+.grid-wrapper .d6x4{		width: 37.5%; } .grid-wrapper .d6x4:before{		padding-top: 66.667%; 	}
+.grid-wrapper .d6x5{		width: 37.5%; } .grid-wrapper .d6x5:before{		padding-top: 83.334%; 	}
+.grid-wrapper .d6x6{		width: 37.5%; } .grid-wrapper .d6x6:before{		padding-top: 100%; 		}
+.grid-wrapper .d6x7{		width: 37.5%; } .grid-wrapper .d6x7:before{		padding-top: 116.667%; 	}
+.grid-wrapper .d6x8{		width: 37.5%; } .grid-wrapper .d6x8:before{		padding-top: 133.334%; 	}
+
+/* 7 X */
+.grid-wrapper .d7x1{		width: 43.75%; } .grid-wrapper .d7x1:before{ 	padding-top: 14.285%; 	}
+.grid-wrapper .d7x2{		width: 43.75%; } .grid-wrapper .d7x2:before{ 	padding-top: 28.571%; 	}
+.grid-wrapper .d7x3{		width: 43.75%; } .grid-wrapper .d7x3:before{ 	padding-top: 42.857%; 	}
+.grid-wrapper .d7x4{		width: 43.75%; } .grid-wrapper .d7x4:before{ 	padding-top: 57.142%; 	}
+.grid-wrapper .d7x5{		width: 43.75%; } .grid-wrapper .d7x5:before{ 	padding-top: 71.428%; 	}
+.grid-wrapper .d7x6{		width: 43.75%; } .grid-wrapper .d7x6:before{ 	padding-top: 85.714%; 	}
+.grid-wrapper .d7x7{		width: 43.75%; } .grid-wrapper .d7x7:before{ 	padding-top: 100%		}
+.grid-wrapper .d7x8{		width: 43.75%; } .grid-wrapper .d7x8:before{ 	padding-top: 114.285%; 	}
+
+/* 8 X */
+.grid-wrapper .d8x1{		width: 50%; } .grid-wrapper .d8x1:before{		padding-top: 12.5%;		}
+.grid-wrapper .d8x2{		width: 50%; } .grid-wrapper .d8x2:before{		padding-top: 25%;		}
+.grid-wrapper .d8x3{		width: 50%; } .grid-wrapper .d8x3:before{		padding-top: 37.5%;		}
+.grid-wrapper .d8x4{		width: 50%; } .grid-wrapper .d8x4:before{		padding-top: 50%;		}
+.grid-wrapper .d8x5{		width: 50%; } .grid-wrapper .d8x5:before{		padding-top: 62.5%;		}
+.grid-wrapper .d8x6{		width: 50%; } .grid-wrapper .d8x6:before{		padding-top: 75%;		}
+.grid-wrapper .d8x7{		width: 50%; } .grid-wrapper .d8x7:before{		padding-top: 87.5%;		}
+.grid-wrapper .d8x8{		width: 50%; } .grid-wrapper .d8x8:before{		padding-top: 100%;		}
+.grid-wrapper .d8x9{		width: 50%; } .grid-wrapper .d8x9:before{		padding-top: 112.5%;	}
+.grid-wrapper .d8x10{		width: 50%; } .grid-wrapper .d8x10:before{		padding-top: 125%;		}
+.grid-wrapper .d8x11{		width: 50%; } .grid-wrapper .d8x11:before{		padding-top: 137.5%;	}
+.grid-wrapper .d8x12{		width: 50%; } .grid-wrapper .d8x12:before{		padding-top: 150%;		}
+.grid-wrapper .d8x13{		width: 50%; } .grid-wrapper .d8x13:before{		padding-top: 162.5%;	}
+.grid-wrapper .d8x14{		width: 50%; } .grid-wrapper .d8x14:before{		padding-top: 175%;		}
+.grid-wrapper .d8x15{		width: 50%; } .grid-wrapper .d8x15:before{		padding-top: 187.5%;	}
+.grid-wrapper .d8x16{		width: 50%; } .grid-wrapper .d8x16:before{		padding-top: 200%;		}
+.grid-wrapper .d8x42{		width:50%;  } .grid-wrapper .d8x42:before{		padding-top:473.6%;		}
+
+/* 10 X */
+.grid-wrapper .d10x10{		width: 50%; } .grid-wrapper .d10x10:before{ 	padding-top: 100%;		}
+
+/* 12 X */
+.grid-wrapper .d12x4{		width: 66.666%; } .grid-wrapper .d12x4:before{	padding-top: 50%;		}
+.grid-wrapper .d12x8{		width: 75%; 	} .grid-wrapper .d12x8:before{	padding-top: 66.7%;		}
+
+/* 16 X */
+.grid-wrapper .d16x0{		width: 100%; } .grid-wrapper .d16x0:before{		padding-top: 0;			}
+.grid-wrapper .d16x1{		width: 100%; } .grid-wrapper .d16x1:before{		padding-top: 6.25%;		}
+.grid-wrapper .d16x2{		width: 100%; } .grid-wrapper .d16x2:before{		padding-top: 12.5%;		}
+.grid-wrapper .d16x3{		width: 100%; } .grid-wrapper .d16x3:before{		padding-top: 18.75%;	}
+.grid-wrapper .d16x4{		width: 100%; } .grid-wrapper .d16x4:before{		padding-top: 25%;		}
+.grid-wrapper .d16x5{		width: 100%; } .grid-wrapper .d16x5:before{		padding-top: 31.25%;	}
+.grid-wrapper .d16x6{		width: 100%; } .grid-wrapper .d16x6:before{		padding-top: 37.5%;		}
+.grid-wrapper .d16x7{		width: 100%; } .grid-wrapper .d16x7:before{		padding-top: 43.75%;	}
+.grid-wrapper .d16x8{		width: 100%; } .grid-wrapper .d16x8:before{		padding-top: 50%;		}
+.grid-wrapper .d16x9{		width: 100%; } .grid-wrapper .d16x9:before{		padding-top: 56.25%;	}
+.grid-wrapper .d16x10{		width: 100%; } .grid-wrapper .d16x10:before{	padding-top: 62.5%;		}
+.grid-wrapper .d16x11{		width: 100%; } .grid-wrapper .d16x11:before{	padding-top: 68.75%;	}
+.grid-wrapper .d16x12{		width: 100%; } .grid-wrapper .d16x12:before{	padding-top: 75%;		}
+.grid-wrapper .d16x13{		width: 100%; } .grid-wrapper .d16x13:before{	padding-top: 81.25%;	}
+.grid-wrapper .d16x14{		width: 100%; } .grid-wrapper .d16x14:before{	padding-top: 87.5%;		}
+.grid-wrapper .d16x15{		width: 100%; } .grid-wrapper .d16x15:before{	padding-top: 93.75%;	}
+.grid-wrapper .d16x16{		width: 100%; } .grid-wrapper .d16x16:before{	padding-top: 100%;		}
+
+
+
